@@ -89,7 +89,7 @@ A good way to sanity check your new rules, is to plug them into the very bottom 
  is based on what table, column, and variable restrictions exist for a given SQL element. Start at L#1311, and follow along to see where you should plug in your rule. 
  
 
-###Unit testing on downstream models?
+### Unit testing on downstream models?
 Because this test suite outputs data in the Spider format, you will easily be able to "plug-and-play" this test data into other models already supporting Spider.
 
 ## Citation
