@@ -1,10 +1,45 @@
 # BehaviorCheckingSemPar
 
-Evaluating Cross-Database Semantic Parsers Using Canonical Utterances
-
-
+Welcome to the code base for the Eval4NLP 2021 paper [Evaluating Cross-Database Semantic Parsers Using Canonical Utterances](https://aclanthology.org/2021.eval4nlp-1.8/)
 ## Overview
-Check back soon for Eval4nlp!!
+
+There are three main ways to use this repo:
+
+1) You can download our dataset used in the `eval4nlp` paper
+2) You can generate a new dataset
+3) You can add more SCFG rules to our grammar, to generate even more data!
+
+Presently, this repo contains tests for the following SQL elements:
+
+* **Basic Clauses**
+    * `SELECT`
+    * `DISTINCT`
+    * `WHERE`
+    * `ORDER BY`
+    * `GROUP BY`
+    * `HAVING`
+* **Aggregate Operators**
+    * `MIN`
+    * `MAX`
+    * `SUM`
+    * `COUNT`
+    * `AVG`
+* **Conditional Operators**
+    * Less than / less than or equal to (`<`, `<=`)
+    * Greater than / greater than or equal to (`>`, `>=`)
+    * Equals (`=`)
+    * Not equals (`!=`)
+    * `BETWEEN`
+* **Logical Operators**
+    * `AND`
+    * `OR`
+    * `AND` + `OR` together
+* **Bonus features** :tada:
+    * `LIKE`
+    * `NOT LIKE`
+    * `IN`
+    * `NOT IN`
+    
 
 ## Quick Start
 
@@ -93,4 +128,23 @@ A good way to sanity check your new rules, is to plug them into the very bottom 
 Because this test suite outputs data in the Spider format, you will easily be able to "plug-and-play" this test data into other models already supporting Spider.
 
 ## Citation
-Coming soon :-)
+
+```
+@inproceedings{lent-etal-2021-testing,
+    title = "Testing Cross-Database Semantic Parsers With Canonical Utterances",
+    author = "Lent, Heather  and
+      Yavuz, Semih  and
+      Yu, Tao  and
+      Niu, Tong  and
+      Zhou, Yingbo  and
+      Radev, Dragomir  and
+      Lin, Xi Victoria",
+    booktitle = "Proceedings of the 2nd Workshop on Evaluation and Comparison of NLP Systems",
+    month = nov,
+    year = "2021",
+    address = "Punta Cana, Dominican Republic",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2021.eval4nlp-1.8",
+    pages = "73--83",
+}
+```
